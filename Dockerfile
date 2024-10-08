@@ -2,7 +2,6 @@ FROM ollama/ollama
 
 COPY ./pull-llama3.sh /pull-llama3.sh
 
-EXPOSE 11434
 ENTRYPOINT [ "/usr/bin/bash", "/pull-llama3.sh"]
 
 # ENTRYPOINT ["/bin/ollama"]
